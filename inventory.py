@@ -9,6 +9,16 @@ def add_product(name, price, quantity):
     }
     products.append(product)
 
+def view_inventory():
+    if not products:
+        print("Kho hiện đang trống!")
+        return
+    print('Danh sách sản phẩm trong kho:')
+    stt = 1
+    for p in products:
+        print(f"{stt}. {p['name']}, {p['price']}, {p['qty']}")
+        stt += 1
+
 def main():
     print('Menu quản lý Inventory:')
     print('_______________________')
