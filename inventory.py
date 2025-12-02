@@ -1,6 +1,14 @@
 # 24S1020031 - Mai Đăng Khoa
 products = []
 
+def add_product(name, price, quantity):
+    product = {
+        'name': name,
+        'price': price,
+        'qty': quantity
+    }
+    products.append(product)
+
 def main():
     print('Menu quản lý Inventory:')
     print('_______________________')
@@ -9,4 +17,3 @@ def main():
     print('3. Duyệt danh sách sản phẩm có số lượng dưới 5')
     print('4. Thoát chương trình!!!')
     print('_______________________')
-
